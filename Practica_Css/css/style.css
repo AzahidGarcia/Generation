@@ -9,7 +9,8 @@
 }
 html {
     box-sizing: border-box;
-    font-size: 100%;
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -20,6 +21,7 @@ body{
 }
 a {
     text-decoration: none;
+    color: var(--blanco);
 }
 .header{
     display: flex;
@@ -42,10 +44,16 @@ h1{
     line-height: 1.5;
 }
 .titulo{
-    font-size: 3rem;
+    font-size: 4rem;
+}
+h2{
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
 }
 p {
-    font-size: 3 rem;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--blanco);
     
@@ -60,7 +68,7 @@ p {
 .navegacion__enlace{
     font-family: var(--fuentePrincipal);
     color: var(--blanco);
-    font-size: 1.6rem;
+    font-size: 3rem;
     margin-right: 2rem; /* aqui le damos espacio a los elementos en la navegación */
 }
 .navegacion__enlace:last-of-type{
@@ -106,6 +114,94 @@ p {
     line-height: 1.2;
 }
 
+table, th, td {
+    border: 1px solid var(--blanco);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.formulario{
+
+    background-color: var(--primariooscuro);
+    width: min(60rem, 100%);/*utiliza el valor mas pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco)
+}
+.formulario fieldset{
+    border: none;
+
+}
+.contenedor-campos{
+
+}
+.campo{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.w-100{
+    width: 100%;
+    }
+@media (min-width: 768px) {
+    .w-100{
+    width: auto;
+    }
+}
+
+.flex { 
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+.boton {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+}
 /* h1 {
 
     color:blue;
