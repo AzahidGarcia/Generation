@@ -1,0 +1,53 @@
+html{
+    font-family: Verdana;
+    font-size: 1.5em;
+}
+h3{
+    color: blue;
+    text-align: center;
+}
+#main{
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+.alert {
+    background-color: #EAD2D5;
+    color: #72353D;
+}
+/* Ejercicio 5 */
+/* .six{
+    height: 200px;
+    width: 50%;
+    color: blue;
+}
+.six.red{
+    color: red;
+} */
+.six{
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    width: 40%;
+    transform: rotate(90deg)
+}
+
+.element {
+    width: 5rem;
+    height: 5rem;
+    animation: pulse 10s infinite;
+  }
+
+  /* La regla arroba @keyframes permite a los autores controlar los pasos intermedios en una secuencia de animación CSS mediante el establecimiento de keyframes (o puntos de trayectoria) a lo largo de la  */
+  @keyframes pulse {
+    0% {
+      background-color: #001F3F;
+    }
+    100% {
+      background-color: #FF4136;
+    }
+  }
+
+/* Seguir con https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors1 */
