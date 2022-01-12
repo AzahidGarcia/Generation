@@ -1,0 +1,33 @@
+:root {
+    --blanco: #d8d8d8;
+    --gris: #0d4067;
+}
+
+h3 {
+    text-align: center;
+}
+h3 {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.boton {
+    background-color: var(--gris);
+    color: var(--blanco);
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border:none;
+}
+.input{
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border:none;
+}

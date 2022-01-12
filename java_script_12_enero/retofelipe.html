@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Felipe </title>
+</head>
+<body>
+    <script>
+        alert("Bienvenido al juego 7u7, aquí sabremos si eres canditado a Generation México, respecto a tu edad");
+
+        function validar (){
+            var nombre = prompt("¿Cuál es tu nombre");
+        var edading = prompt("¿Cuantos años tienes");
+        var edad= Number(edading);
+        if(18<=edad && edad<29){
+            alert("Hola "+ nombre)
+            alert("Felicidades, cumples con los requisitos para ser aceptado en el Bootcamp Java Full Stack de Generation!");
+        }
+        else{
+            alert("no cumple con los requisitos para el programa.")
+        }
+    }
+    validar();
+    console.log("Nombre: "+ nombre + " Edad: "+ edad);
+    </script>
+</body>
+</html>

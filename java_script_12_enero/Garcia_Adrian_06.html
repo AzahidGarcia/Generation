@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>    
+    <title>A4S4</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Título de la Pagina WEB">
+    <meta name="description" content="Descripción de la WEB">      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>  
+<body>  
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">¡Hola!</h1>
+          <p class="lead">Aquí podras revisar los ejercicios correspondientes a la cuarta semana:</p>
+        </div>
+    </div>
+    <div class="navegacion contenedor" >
+        <h3>
+            <!-- Ejercicio 1 -->
+            <p id="ejercicioA1"></p>
+            <input type="text"  value="" onkeyup="this.value=Numeros(this.value)" id="ingresar"/>
+            <p> <button id="uno" class="boton">Ingresar</button> </p>
+            <p>Arreglo A</p> <p id="resultado"></p><br>
+            <p>Arreglo B</p><p id="resultado2"></p><br>
+            <p>Arreglo C</p><p id="resultado3"></p><br>
+            <p> <button id="borrar1" class="boton" onclick="location.reload()">borrar </button> </p>
+            
+
+    </div>
+    <script>
+        // const arregloA = new Array ();
+        // const arregloB = new Array ();
+        // const arregloC = new Array ();
+        // var arrA = arregloA;
+        // var arrB = arregloB;
+        // var arrC = arregloC;
+        // var arrALe= arregloA.length;
+        // var arrBLe= arregloB.length;
+        // var arrCLe= arregloC.length;
+        document.getElementById('borrar1').style.display='none'
+        const arregloA = new Array ();
+        const arregloB = new Array ();
+        const arregloC = new Array ();
+document.getElementById('uno').onclick = function(){
+        var arrA = arregloA;
+        var arrB = arregloB;
+        var arrC = arregloC;
+        var arrALe= arregloA.length;
+        var arrBLe= arregloB.length;
+        var arrCLe= arregloC.length;
+    // document.getElementById("resultado").innerHTML += '';
+    var n = document.getElementById("ingresar").value;
+    var n1 = Number(n);
+        arregloA.push(n1);
+        var arrALe= arregloA.length;
+    var boton = document.getElementById("uno");
+    boton.addEventListener("click", function() {
+  document.getElementById("resultado").innerHTML = '';
+},true);
+boton.addEventListener("click", function() {
+  document.getElementById("resultado2").innerHTML = '';
+},true);
+boton.addEventListener("click", function() {
+  document.getElementById("resultado3").innerHTML = '';
+},true);
+document.getElementById("resultado").innerHTML += arrA + "<br>" + "Hay: " + arrALe   + " numeros en este array";
+    document.getElementById("resultado2").innerHTML += arrB + "<br>"+ "Hay: " + arrBLe   + " numeros en este array";
+    document.getElementById("resultado3").innerHTML += arrC + "<br>"+ "Hay: " + arrCLe   + " numeros en este array";
+}
+function Numeros(string){//Solo numeros
+    var out = '';
+    var filtro = '1234567890';//Caracteres validos
+	
+    //Recorrer el texto y verificar si el caracter se encuentra en la lista de validos 
+    for (var i=0; i<string.length; i++)
+       if (filtro.indexOf(string.charAt(i)) != -1) 
+             //Se añaden a la salida los caracteres validos
+	     out += string.charAt(i);
+	
+    //Retornar valor filtrado
+    return out;
+} 
+    </script>
+    
+    <!-- Scripts necesarios para Bootsrap y jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>  
+</html>
+
+
+
+
+
